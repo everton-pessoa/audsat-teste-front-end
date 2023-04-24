@@ -43,7 +43,7 @@ export class AdminComponent implements OnInit {
 
       };
 
-    this.subSetLog = this.subSetLog = this.logService.setLog(log);
+    this.subSetLog = this.logService.setLog(log);
 
   }
 
