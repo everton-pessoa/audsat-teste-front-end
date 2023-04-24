@@ -43,7 +43,8 @@ export class PostListComponent {
   };
 
   ngOnDestroy() {
-    this.subSetLog.unsubscribe();
+    
+    if(this.subSetLog){this.subSetLog.unsubscribe()};
   }
 
 }

@@ -46,8 +46,8 @@ export class PostHistoryComponent implements OnInit{
   }
 
   ngOnDestroy() {
-    this.subGetUser.unsubscribe();
-    this.subGetPosts.unsubscribe();
+    if(this.subGetUser){this.subGetUser.unsubscribe()};
+    if(this.subGetPosts){this.subGetPosts.unsubscribe()};
   }
 
 }

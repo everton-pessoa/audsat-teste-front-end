@@ -74,8 +74,8 @@ export class AdminComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    this.subGetUsers.unsubscribe();
-    this.subSetLog.unsubscribe();
+    if(this.subGetUsers){this.subGetUsers.unsubscribe()};
+    if(this.subSetLog){this.subSetLog.unsubscribe()};
   }
 
 }

@@ -15,7 +15,4 @@ export class LogsService {
     return this.apiService.postLog(log).pipe(take(1)).subscribe({});
   }
 
-  ngOnDestroy() {
-    this.subSetLog.unsubscribe();
-  }
 }

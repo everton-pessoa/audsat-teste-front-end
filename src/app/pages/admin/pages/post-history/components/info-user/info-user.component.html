@@ -15,11 +15,34 @@
         <div matListItemLine>{{user.email}}</div>
       </mat-list-item>
       <mat-divider></mat-divider>
-      <mat-list-item>
-        <mat-icon matListItemIcon>location_on</mat-icon>
-        <div matListItemTitle>Endereço</div>
-        <div matListItemLine class="no-wrap">{{ user.address.street }} - {{ user.address.city }}</div>
+      <mat-list-item class="custom">
+        <mat-icon matListItemIcon>phone</mat-icon>
+        <div matListItemTitle>Telefone</div>
+        <div matListItemLine class="no-wrap">{{ user.phone }}</div>
       </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon matListItemIcon>language</mat-icon>
+        <div matListItemTitle>Site</div>
+        <div matListItemLine class="no-wrap">{{ user.website }}</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item class = "custom">
+        <mat-icon matListItemIcon>work</mat-icon>
+        <div matListItemTitle>Empresa</div>
+        <div matListItemLine class="no-wrap">{{ user.company.name }}</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <br/>
+      <mat-list-item class="custom">
+        <mat-icon matListItemIcon>location_on</mat-icon>
+        
+        <div matListItemTitle>Endereço</div>
+        <div matListItemLine class="no-wrap">{{ user.address.street }}, </div>
+        <div matListItemLine class="no-wrap">{{ user.address.suite }} - </div>
+        <div matListItemLine class="no-wrap">{{ user.address.city }}</div>
+      </mat-list-item>
+
     </mat-list>
   </mat-card-content>
 </mat-card>
