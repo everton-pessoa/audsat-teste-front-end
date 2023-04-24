@@ -1,15 +1,15 @@
-<section class="container">
+<section>
   <mat-accordion *ngFor="let post of posts" class="accordion-section">
     <mat-expansion-panel hideToggle>
       <mat-expansion-panel-header class="accordion-header">
-        <div class="accordion-header">
+        <div class="accordion-header" >
           <mat-panel-title class="header">{{ post.title }} </mat-panel-title>
           <mat-panel-description>
             {{ post.body }}
           </mat-panel-description>
         </div>
         <mat-card-actions>
-          <mat-icon class="icon-menu-mobile" (click)="deletePost(post.id)">delete_outline</mat-icon>
+          <mat-icon class="icon-menu-mobile custom-btn" (click)="deletePost(post.id)">delete_outline</mat-icon>
         </mat-card-actions>
       </mat-expansion-panel-header>
       <app-list-comments [_postId]="post.id"></app-list-comments>
