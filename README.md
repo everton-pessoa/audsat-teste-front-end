@@ -27,6 +27,7 @@ para criar o mock dos logs utilizei o serviço **testapi.io** (https://testapi.i
     #execute o servidor de desenvolvimento
 	npm run start
 
+**Um live preview do projeto pode ser conferido aqui** =>  https://audsat-teste-front-end-everton-pessoa.vercel.app
 
 ## Endpoints testapi.io
 
