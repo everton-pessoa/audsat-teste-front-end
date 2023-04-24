@@ -1,1 +1,11 @@
-<p>post-history works!</p>
+<section class="container" fxLayout="row wrap" fxLayoutGap = "2%">
+    <app-info-user 
+      fxFlex="18" fxFlex.md="18" fxFlex.xs="98" fxFlex.sm = "98" 
+      [userData]="userData"
+    ></app-info-user>
+    <app-post-list 
+      fxFlex="80" fxFlex.md="80" fxFlex.xs="98" fxFlex.sm = "98" 
+      [postsData]="postsData"
+      ></app-post-list>
+  </section>
+  

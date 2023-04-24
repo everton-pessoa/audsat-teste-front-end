@@ -1,1 +1,24 @@
-<p>users-filters works!</p>
+<mat-card class="container">
+    <mat-card-header>
+      <mat-card-subtitle>Filtrar por:</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content fxLayout="row wrap" fxLayoutGap = "2%" class="input-content" [formGroup]="formFilter">
+      <mat-form-field fxFlex="28"  fxFlex.md="28" fxFlex.xs = "98" fxFlex.sm = "98" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput id="name" formControlName="name"  />
+      </mat-form-field>
+      <mat-form-field fxFlex="28"  fxFlex.md="28" fxFlex.xs = "98" fxFlex.sm = "98" appearance="fill">
+        <mat-label>Username</mat-label>
+        <input matInput id="userName" formControlName="userName" />
+      </mat-form-field>
+      <mat-form-field fxFlex="28"  fxFlex.md="28" fxFlex.xs = "98" fxFlex.sm = "98" appearance="fill">
+        <mat-label>E-mail</mat-label>
+        <input matInput id="email" formControlName="email"  />
+      </mat-form-field>
+      <button fxFlex="10"  fxFlex.md="8" fxFlex.xs = "98" fxFlex.sm = "98" mat-raised-button class="primary-btn" (click)="filter()">
+        Filtrar
+      </button>
+    </mat-card-content>
+</mat-card>
+  

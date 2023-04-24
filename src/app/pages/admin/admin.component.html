@@ -1,1 +1,5 @@
-<p>admin works!</p>
+<h2>Lista de Usuários</h2>
+
+<app-loading [type] = "'progress'"></app-loading>
+<app-users-filters (formData) = "setFormData($event)"></app-users-filters>
+<app-list-search [users]="users"> </app-list-search>

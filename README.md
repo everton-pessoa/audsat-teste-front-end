@@ -1,27 +1,42 @@
-# AudsatTesteFrontEnd
+# Olá, bem vindo ao teste para desenvolvedor Front End da Audsat!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+Meu nome é Everton Pessôa, estou participando do processo seletivo para desenvolvedor Front End da Audsat. Este repositório foi criado para armazenar o código fonte do teste proposto. Gostei muito do desafio, com ele pude voltar aos estudos e aprendi novos padrões de estrutura do Angular, framework do qual gosto muito.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Tecnologias
 
-## Code scaffolding
+Conforme proposto o projeto foi desenvolvido em  **Angular  15.02.0!** (https://angular.io/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para folha de Estilos utilizei  **SASS** (https://sass-lang.com/)
 
-## Build
+Para desenho do UI utilize  **Material Design **(https://material.angular.io/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+para o posicionamento de layout(grid) utilizei a biblioteca **flex layout** (https://github.com/angular/flex-layout
 
-## Running unit tests
+para criar o mock dos logs utilizei o serviço **testapi.io** (https://testapi.io/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+# Como Rodar o projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    #Clone o projeto
+    https://github.com/everton-pessoa/audsat-teste-front-end.git
+    
+    #Instale as dependências
+    npm install
+    
+    #execute o servidor de desenvolvimento
+	npm run start
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Endpoints testapi.io
+
+GET https://testapi.io/api/Everton/resource/testeaudsat
+
+POST https://testapi.io/api/Everton/resource/testeaudsat
+
+GET https://testapi.io/api/Everton/resource/testeaudsat/{id}
+
+PUT https://testapi.io/api/Everton/resource/testeaudsat/{id}
+
+DELETE https://testapi.io/api/Everton/resource/testeaudsat/{id}
+

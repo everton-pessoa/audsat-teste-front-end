@@ -1,1 +1,34 @@
-<p>header works!</p>
+<mat-toolbar fxLayout="row wrap" fxLayoutGap = "2%"  class="container" >
+  <section fxFlex="28" fxFlex.md="28" fxFlex.xs="78" fxFlex.sm="78" fxLayoutAlign="start">
+    <img src="../../../assets/logo.svg" alt="audsat logomarca" class="logo" />
+  </section>
+    
+    <section fxFlex="68" fxFlex.md="68" fxHide.xs fxHide.sm fxLayoutAlign="end" fxLayoutGap="15px">
+      <button mat-raised-button class="primary-btn" routerLink="/">HOME</button>
+      <button mat-raised-button class="primary-btn" routerLink="/admin">ADMIN</button>
+      <button mat-raised-button class="primary-btn" routerLink="/logs">LOGS</button>
+    </section>
+
+    <section fxHide.lg fxHide.md fxFlex.xs="20" fxFlex.sm="20" fxLayoutAlign="end" fxLayoutGap="15px">
+      <button class="btn-mobile" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu class="menu-mobile" #menu="matMenu">
+    
+        <button mat-menu-item routerLink="/">
+          <mat-icon class="icon-menu-mobile">home</mat-icon>
+          <span class="txt-menu-mobile">HOME</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item routerLink="/admin">
+          <mat-icon class="icon-menu-mobile">person</mat-icon>
+          <span class="txt-menu-mobile">ADMIN</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item routerLink="/logs">
+          <mat-icon class="icon-menu-mobile">playlist_play</mat-icon>
+          <span class="txt-menu-mobile">LOGS</span>
+        </button>
+      </mat-menu>
+    </section>
+</mat-toolbar>

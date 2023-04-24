@@ -1,1 +1,93 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$audsat-teste-front-end-primary: mat.define-palette(mat.$indigo-palette);
+$audsat-teste-front-end-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$audsat-teste-front-end-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$audsat-teste-front-end-theme: mat.define-light-theme((
+  color: (
+    primary: $audsat-teste-front-end-primary,
+    accent: $audsat-teste-front-end-accent,
+    warn: $audsat-teste-front-end-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($audsat-teste-front-end-theme);
+
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+  --green-20: #ecfaf3;
+  --green-100: #007839;
+  --blue-100: #003040;
+  --white-100: #fff;
+  --grey-100: #dcdada; 
+  --grey-300: #ccc; 
+}
+
+
+
+html, body { height: 100%; background-color: var(--grey-100); }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.primary-btn {
+  background-color: var(--green-100)!important;
+  color:  var(--white-100)!important;
+  height: 57px;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+
+  transition: 0.3s !important;
+
+  &:hover {
+    opacity: 0.94;
+  }
+
+  &:active {
+    background-color: var(--blue-100) !important;
+  }
+
+}
+
+
+.mat-table-responsive{
+  overflow-x:auto;
+}
+
+mat-form-field input{
+  width: 100% !important;
+}
+
+.no-wrap{
+  word-wrap: break-word !important;
+  white-space: pre-wrap !important;
+}
+
+.icon-menu-mobile, .txt-menu-mobile{
+  color: var(--green-100) !important;
+}
+
+.user-profile {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLicRlg-czIhvWFXq30rvn-3YEjdrwb672dvgOzI3b&s');
+  background-size: cover;
+}

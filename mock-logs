@@ -1,0 +1,5 @@
+GET	https://testapi.io/api/Everton/resource/testeaudsat
+POST	https://testapi.io/api/Everton/resource/testeaudsat
+GET	https://testapi.io/api/Everton/resource/testeaudsat/{id}
+PUT	https://testapi.io/api/Everton/resource/testeaudsat/{id}
+DELETE	https://testapi.io/api/Everton/resource/testeaudsat/{id}
